@@ -15,8 +15,11 @@ import reactor.core.publisher.Mono;
 @RequestMapping("reactive-math")
 public class ReactiveMathValidationController {
 
-    @Autowired
-    private ReactiveMathService mathService;
+    private final ReactiveMathService mathService;
+
+    public ReactiveMathValidationController(ReactiveMathService mathService) {
+        this.mathService = mathService;
+    }
 
     @GetMapping("square/{input}/throw")
     public Mono<Response> findSquare(@PathVariable int input){
