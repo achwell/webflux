@@ -1,0 +1,10 @@
+server:
+    port: 8091
+spring:
+    data:
+        mongodb:
+            database: productdb
+#            host: localhost
+#            port: 27017
+#            username:
+#            password:
