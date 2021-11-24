@@ -1,7 +1,6 @@
 package com.vinsguru.productservice.service;
 
 import com.vinsguru.productservice.dto.ProductDto;
-import com.vinsguru.productservice.entity.Product;
 import com.vinsguru.productservice.repository.ProductRepository;
 import com.vinsguru.productservice.util.EntityDtoUtil;
 import org.springframework.data.domain.Range;
