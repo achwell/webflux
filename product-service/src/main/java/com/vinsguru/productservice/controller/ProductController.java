@@ -8,8 +8,8 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.net.URI;
-import java.net.URISyntaxException;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("product")
 public class ProductController {
